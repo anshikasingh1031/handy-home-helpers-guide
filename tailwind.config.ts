@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,24 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// HandyHelper custom colors
+				wood: {
+					light: '#D9B99B',
+					DEFAULT: '#B38B6D',
+					dark: '#8C6B4F',
+				},
+				tool: {
+					light: '#EAEAEA',
+					DEFAULT: '#A7A7A7',
+					dark: '#5A5A5A',
+				},
+				accent1: {
+					DEFAULT: '#C62828', // deep red
+				},
+				accent2: {
+					DEFAULT: '#1A4B84', // navy blue
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -89,7 +107,10 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+			},
+			fontFamily: {
+				'handy': ['"Work Sans"', 'sans-serif'],
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
